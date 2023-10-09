@@ -1,0 +1,418 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* font-family: sans-serif; */
+    box-sizing: border-box;
+    
+}
+#hero{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,0.5),#01574f),url('https://wallpapercave.com/wp/wp6828821.jpg');
+    background-size: cover;
+}
+nav{
+    /* മൂന്നായി പിരിഞ്ഞു  */
+    display: flex;
+    align-items: center;
+    /* മൂന്നും ഈക്വൽ ആയി അകന്നുനിൽക്കാൻ   */
+    justify-content: space-between;
+    padding-top: 45px;
+
+    /* % കൊടുത്താൽ മാത്രമേ സൈറ്റ് റസ്പോൺസ് ആവുകയുള്ളൂ  */
+   
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.logo{
+    color: white;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+span{
+    color: #00ffe5;
+}
+nav ul li{
+    /* കുത്തു കളയാൻ  */
+    list-style-type: none;
+    /* ഇവിടെ inline ബ്ലോക്ക് ആണ് കൊടുക്കേണ്ടത്  */
+    display: inline-block;
+    padding: 10px 25px;
+
+}
+nav ul li a{
+    font-size: 25px;
+    color: white;
+    /* അടിയിലെ വര പോവാൻ  */
+    text-decoration: none;
+    font-weight: bold;
+    /* ആദ്യത്തെ അക്ഷരം ക്യാപിറ്റൽ ലെറ്റർ ആവാൻ  */
+    text-transform: capitalize;
+
+}
+nav ul li a:hover{
+    color: #00ffe5;
+    transition: .04s;
+}
+.btn{
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+    border: 2px solid #00ffe5;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: transform .4s;
+}
+.btn:hover{
+    transform: scale(1.2);
+}
+.content{
+    position: absolute;
+    top: 70%;
+    left: 8%;
+    transform: translateY(-50%);
+}
+h1{
+    color: white;
+    margin: 20px 0px 20px;
+    font-size: 50px;
+}
+h3{
+    color: white;
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+h4{
+    color: white;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+/* ABOUT */
+
+
+#about{
+    width: 100%;
+    padding: 100px 0px;
+    background: linear-gradient(rgba(0,0,0,0.5),#01574f),url(./img/sachin-tendulkar-30000.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+
+/* NAVBAR ABOUT */
+
+
+
+#about .title{
+ position: absolute;
+ background-color: white;
+ width: 100%;
+ text-align: center;
+ top: 0;
+
+}
+
+
+#about img{
+    height: 350px;
+    width: 600px;
+    padding: 30px;
+    margin-left: 1px;
+    border:2px solid #00ffe5;
+}
+#about-text{
+    width: 550px;
+}
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.about-text h5{
+    color: white;
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin-bottom: 25px;
+   text-transform: capitalize;
+}
+.about-text p{
+    margin-top: 12%;
+    color: white;
+    letter-spacing: 1px;
+    line-height: 30px;
+    font-size: 18px;
+    margin-bottom: 1%;
+    padding: 10px;
+    text-align: justify;
+    width: 800px;
+}
+button{
+    margin-top: 5%;
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+    border: 2px solid #00ffe5;
+    font-weight: bold;
+    padding: 13px 30px ;
+    border-radius: 30px;
+    transition: .4s;
+
+}
+button:hover{
+    background-color: transparent;
+    border: 2px solid #00ffe5;
+}
+
+/* ACHIEVMENT */
+
+#achiev{
+    position: relative;
+    width: 100%;
+    padding: 100px 0px;
+    background: linear-gradient(rgba(0,0,0,0.5),#01574f),url('https://wallpaperaccess.com/full/1408587.jpg');
+    background-size: cover;
+}
+
+.title{
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    top: 0;
+}
+
+.heading{
+    color: white;
+    text-align: center;
+    border: 2px solid #00ffe5;
+    margin: 105px;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+/* NAVBAR */
+
+#achiev .ach{
+    color: #00ffe5;
+}
+
+#achiev img{
+    height: auto;
+    width: 430px;
+}
+.tab1{
+    margin-left: 22%;
+    margin-top: 5%;
+}
+.headd{
+   background-color: #01574f;
+}
+.tab1 tr{
+    border: 2px solid white;
+    margin: 20px;
+
+}
+.tab1 tr td{
+    padding: 20px;
+    text-align: center;  
+    color: white;
+}
+tr:hover{
+    background-color: #01574f;
+}
+
+.achlist{
+    margin-left: 350px;
+    margin-top: 50px;
+    position: relative;
+    justify-content: center;
+    color: white;
+    line-height: 1.8;
+    justify-content: center;
+    font-size: 1.5rem;
+    padding: 5px;
+}
+
+
+/* GALLERY */
+
+#gallery{
+    position: relative;
+    width: 100%;
+    padding: 100px 0px;
+    background:#01574f;
+    background-size: cover;
+    height: 145vh;
+}
+
+.tabbox{
+    justify-content: center;
+   margin-top: 20px;
+    margin-left: 175px;
+}
+
+.photo{
+    width: 386px;
+    height: 250px;
+    border: 2px solid #00ffe5;
+    margin: 5px;
+    transition: .4s ease;
+}
+.photo:hover{
+    padding: 5px 10px;
+    border: 10px solid #00ffe5;
+    color: aliceblue;
+    box-shadow: 0 0 100px #00ffe5 ;
+    color: black;
+}
+
+
+/* videos */
+
+
+#video{
+    position: relative;
+    width: 100%;
+    padding: 100px 0px;
+    background:#01574f;
+    background-size: cover;
+    height: 145vh;
+}
+
+.tabbox{
+    justify-content: center;
+   margin-top: 20px;
+    margin-left: 175px;
+}
+
+.photo{
+    width: 386px;
+    height: 250px;
+    border: 2px solid #00ffe5;
+    margin: 5px;
+    transition: .4s ease;
+}
+
+iframe{
+    width: 386px;
+    height: 250px;
+    border: 2px solid #00ffe5;
+    margin: 5px;
+    transition: .4s ease;
+}
+iframe:hover{
+    padding: 5px 10px;
+    border: 10px solid #00ffe5;
+    color: aliceblue;
+    box-shadow: 0 0 100px #00ffe5 ;
+    color: black;
+}
+
+
+
+/* contact */
+
+
+
+#contact{
+    position: relative;
+    width: 100%;
+    padding: 100px 0px;
+    background: linear-gradient(rgba(0,0,0,0.5),#01574f),url('https://wallpapercave.com/wp/wp6828821.jpg');
+    background-size: cover;
+    height: 105vh;
+}
+.map{
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    left: 50px;
+    top: 70px;
+}
+
+.frm{
+    width: 450px;
+    height: 500px;
+    margin-left: 1000px;
+    padding: 50px;
+}
+
+label{
+
+    color: white;
+}
+input{
+    color: WHITE;
+    background-color: transparent;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+input:hover{
+    border: 2px solid crimson;
+}
+
+
+textarea{
+    color: WHITE;
+    background-color: transparent;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+textarea:hover{
+   
+    border: 2px solid crimson;
+}
+
+.bts{
+    padding: 7px;
+   border: 2px solid rgb(255, 255, 255);
+   transition: .4s ease;
+   border-radius: 15px;
+   color: white;
+   background-color: transparent;
+}
+.bts:hover{
+
+    color: crimson;
+    border: 2px solid crimson;
+
+}
+
+/* FOOT */
+
+.last{
+    position: relative;
+    background-color: white;
+    height: 122px;
+    margin-top: 20px;
+   
+}
+i{
+   position: absolute;
+    left: 50%;
+    top: 100px;
+    color: black;
+
+
+
+}
+.fa-square-facebook{
+    left: 45%;
+}
+
+.fa-square-whatsapp{
+    left: 55%;
+}
+h5{
+    text-align: center;
+    color: black;
+    margin-top: 8px;
+    bottom: 0;
+}
